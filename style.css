@@ -1,3 +1,71 @@
-body {
-    background-color: #f8f9fa;
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+body.not-authenticated .role-logged-in {
+    display: none;
+}
+
+body.authenticated .role-logged-out {
+    display: none;
+}
+
+/* Admin role visibility */
+.role-admin {
+    display: none;
+}
+
+body.is-admin .role-admin {
+    display: block;
+}
+
+/* Additional styling */
+.navbar-brand {
+    font-weight: 600;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.badge {
+    font-size: 0.85em;
+}
+
+table {
+    font-size: 0.95em;
+}
+
+.table-actions {
+    white-space: nowrap;
+}
+
+.table-actions .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Request items styling */
+.input-group .item-name {
+    flex: 2;
+}
+
+.input-group .item-qty {
+    flex: 1;
+    max-width: 100px;
+}
+
+.input-group .remove-item {
+    width: 40px;
 }
